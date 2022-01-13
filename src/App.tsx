@@ -1,9 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import Todos from './Todos';
+import TodoList from './components/TodoList';
+import { saveTodoToLocalStorage, getTodosFromLocalStorage, cleareStorage } from './utils/localStorageControlls';
+// import Todos from './Todos';
 
-function App() {
-  return <Todos />;
+const App = () => {
+  return (
+    <main>
+      <TodoList />
+    </main>
+  );
 }
 
 export default App;

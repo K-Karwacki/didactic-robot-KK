@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  /* background-color: rgb(172, 172, 172); */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,130 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+main{
+  margin-top: 4rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+span#error{
+  display: none;
+}
+#todo.error>span#error{
+  display: block;
+  text-align: center;
+  color: red;
+  font-size: 1.1rem;
+}
+
+#todo-item-creator>div{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  /* align-content: space-between; */
+  justify-content: center;
+}
+#todo-item-creator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#todo-item-creator>button{
+  margin-top: 2rem;
+  width: 250px;
+  height: 50px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#todo-item-creator>div>div{
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+#todo-item-creator>div>div:last-child{
+  margin-right: 0;
+}
+#todo-item-creator>div>div>label{
+  margin-bottom: .4rem;
+  font-size: 1.2rem;
+}
+
+#todo-item-creator>div>div>input, #todo-item-creator>div>div>select{
+  width: 200px;
+  font-size: 1.1rem;
+}
+
+
+#todo-list-container>h1{
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#todo-filter{
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+#todo-filter>div{
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+#todo-filter>div>input{
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+#todo-list{
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+}
+#todo-list>tr>td{
+  text-align: center;
+  width: 250px;
+  border-bottom: 1px solid black;
+  padding: 1rem 0;
+  text-transform: capitalize;
+    border-right: 1px solid black;
+  border-left: 1px solid black;
+  background-color: rgb(241, 241, 241);
+
+}
+
+#todo-list>tr>td:last-child{
+  width: 50px;
+  border-top: 1px solid black;
+  cursor: pointer;
+}
+#todo-list>tr>td:last-child:hover{
+  transition: all .2s ease-out;
+  background-color: rgb(224, 224, 224);
+
+}
+
+#todo-list>tr>th{
+  /* border-top-left-radius: 7px;
+  border-top-right-radius: 7px; */
+  width: 250px;
+  /* margin-bottom: 5rem; */
+  border: 1px solid black;
+
+  padding: 1rem;
+  background-color: rgb(224, 224, 224);
+}
+
+#todo-list>tr>th:last-child{
+  width: 50px;
+  background-color: white;
+  border:none;
+  /* border-bottom: 1px solid black; */
+  /* border: none; */
 }
